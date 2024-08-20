@@ -8,12 +8,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private InputReader _playerInputSO;
     [SerializeField] private Transform _groundChecker;
     private bool _isSecondJump;
-    private bool _isGround;
+    public bool _isGround { get; set; }
     [SerializeField] private Player _player;
     public LayerMask WhatIsGround;
     public Vector2 BoxSize;
     private Rigidbody2D _rigid;
-    private Vector2 _xmove;
+    public Vector2 _xmove { get; set; }
     public float JumpSpeed; 
     public float MoveSpeed;
 
